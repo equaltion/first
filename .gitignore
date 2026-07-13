@@ -1,0 +1,32 @@
+# 编译产物（.exe .obj 这些都不需要提交，太大了）
+*.exe
+*.exe.manifest
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.dll
+
+# Visual Studio 本地缓存（你之前折腾的那个 .vs 文件夹）
+.vs/
+.vscode/
+
+# 构建输出目录（Debug/Release 都是编译器自动生成的）
+Debug/
+Release/
+x64/
+x86/
+
+# vcpkg 安装的第三方库（这个文件夹极大，且别人可以通过 vcpkg.json 自己装）
+vcpkg_installed/
+packages/
+.vcpkg-root/
+
+# 其他可能的临时文件
+*.log
+*.tmp
+*.user
+*.suo
+*.sdf
+*.opensdf
