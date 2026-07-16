@@ -1,0 +1,10 @@
+{
+    "welcome":"欢迎来到文本文件合并转发器。\n这是一个个人练习。\n为使你能够将指定的几个文本文件诸如.py，.cpp，.c，.json文件变成单个.txt文件，用以便捷的与AI交流",
+    "exit":"你确定要退出吗",
+    ">>>":">>>",
+    "backtocommand":"已回到命令模式",
+    "cometopathinput":"进入路径输入模式（输入 1 或 back 返回）",
+    "unknowncommand":"未知输入",
+    "voidpathlist":"路径列表为空",
+    "pathaddsuccess":"成功加入"
+}
