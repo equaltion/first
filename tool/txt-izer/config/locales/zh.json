@@ -6,5 +6,9 @@
     "cometopathinput":"进入路径输入模式（输入 1 或 back 返回）",
     "unknowncommand":"未知输入",
     "voidpathlist":"路径列表为空",
-    "pathaddsuccess":"成功加入"
+    "pathaddsuccess":"成功加入",
+    "notallowed":"未允许类别",
+    "notfile":"未找到文件",
+    "cammandwrong":"未定义命令",
+    "backing":"已返回命令模式"
 }
