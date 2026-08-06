@@ -1,0 +1,13 @@
+{
+  "extensions": [
+    ".txt",
+    ".md",
+    ".cpp",
+    ".h",
+    ".py",
+    ".json"
+  ],
+  "output_dir": "{ROOT}",
+  "output_filename": "merged.txt",
+  "locales_dir": "{ROOT}/config/locales"
+}

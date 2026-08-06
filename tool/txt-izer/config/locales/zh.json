@@ -1,7 +1,6 @@
 {
-    "welcome":"欢迎来到文本文件合并转发器。\n这是一个个人练习。\n为使你能够将指定的几个文本文件诸如.py，.cpp，.c，.json文件变成单个.txt文件，用以便捷的与AI交流",
+    "welcome":"欢迎来到文本文件合并工具。\n这是一个个人练习。\n为使你能够将指定的几个文本文件诸如.py，.cpp，.c，.json文件变成单个.txt文件，用以便捷的与AI交流.\n可用命令: <路径>, list, remove <编号|路径>, clear, merge, help, exit/quit",
     "exit":"你确定要退出吗",
-    ">>>":">>>",
     "backtocommand":"已回到命令模式",
     "cometopathinput":"进入路径输入模式（输入 1 或 back 返回）",
     "unknowncommand":"未知输入",
@@ -10,5 +9,28 @@
     "notallowed":"未允许类别",
     "notfile":"未找到文件",
     "cammandwrong":"未定义命令",
-    "backing":"已返回命令模式"
+    "backing":"已返回命令模式",
+    "error.read_file": "读取文件失败 {filepath}: {error}",
+    "error.write_file": "写入输出文件失败 {path}: {error}",
+    "error.placeholder": "[无法读取 {filepath}: {error}]",
+    "prompt": ">>> ",
+    "goodbye": "再见。",
+    "list_empty": "文件列表为空。",
+    "list_header": "待合并的文件:",
+    "file_added": "已添加: {file}",
+    "file_exists": "文件已在列表中: {file}",
+    "file_removed": "已移除: {file}",
+    "file_not_in_list": "列表中不存在: {file}",
+    "invalid_index": "无效的编号。",
+    "list_cleared": "文件列表已清空。",
+    "merging": "正在合并文件...",
+    "merge_success": "合并完成，输出文件: {output}",
+    "merge_failed": "合并失败。",
+    "merge_errors": "错误信息:",
+    "help_text": "可用命令:\n  <路径>          添加文件\n  list            查看列表\n  remove <编号|路径> 移除文件\n  clear           清空列表\n  merge           执行合并\n  help            显示此帮助\n  exit/quit       退出",
+    "error.language.empty": "语言代码或语言包目录不能为空。",
+    "error.language.file_not_found": "语言文件不存在: {lang_file}",
+    "error.language.json_decode": "语言文件 JSON 格式错误: {lang_file}",
+    "language_switched": "语言已切换至: {lang_code}"
+
 }

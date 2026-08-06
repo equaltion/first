@@ -8,7 +8,6 @@
 *.lib
 *.dll
 
-# Visual Studio 本地缓存（你之前折腾的那个 .vs 文件夹）
 .vs/
 .vscode/
 
@@ -30,3 +29,6 @@ packages/
 *.suo
 *.sdf
 *.opensdf
+
+__pycache__/
+*.pyc

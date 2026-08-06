@@ -4,7 +4,6 @@ import os
 def load_language(lang_code='zh'):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     lang_file = os.path.join(base_dir,'config','locales', f'{lang_code}.json')
-    
     try:
         with open(lang_file, 'r', encoding='utf-8') as f:
             return json.load(f)
@@ -13,21 +12,17 @@ def load_language(lang_code='zh'):
         with open(fallback_file, 'r', encoding='utf-8') as f:
             return json.load(f)
 
-
 class Settings:
     def __init__(self):
-        self.language='zh'
-        self.lang = load_language('zh')
+        self.language='nya'
+        self.lang = load_language(self.language)
         self.extension = {'.cpp', '.h', '.py','.json','.txt','.m'}
-
 
 class global_value:
     def __init__(self):
         self.worklist = []
         self.workstate ="path_input"
         self.running = 1
-
-
 
 def command(user_input,set,work):
     match (work.workstate, user_input):
@@ -41,7 +36,7 @@ def command(user_input,set,work):
         case _:
             print(set.lang['cammandwrong'])
     if(work.workstate=="exit"):
-        get=input(set.lang["exit"]+"\n"+set.lang[">>>"])
+        get=input(set.lang["exit"]+"\n"+set.lang["prompt"])
         if(get=="0"):
             work.running=0
         else :
@@ -70,18 +65,15 @@ def merge(lang,worklist):
         for _ in worklist:
             with open(_, 'r', encoding='utf-8') as f:
                 content = f.read()
-                out.write(f"\n{'='*10}\n{_}\n{'='*10}\n\n")
+                out.write(f"\n{'='*40}\n{_}\n{'='*40}\n\n")
                 out.write(content)
-
-
-
 
 def main():
     set=Settings()
     work=global_value()
     print(set.lang["welcome"])
     while work.running != 0:
-        user_input=input(set.lang[">>>"])
+        user_input=input(set.lang["prompt"])
         if(work.workstate=="command"):
             command(user_input,set,work)
         elif(work.workstate=="path_input"):
